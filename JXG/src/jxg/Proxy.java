@@ -38,16 +38,15 @@ public class Proxy {
             Authenticator.setDefault(new Authenticator() {
                 protected PasswordAuthentication getPasswordAuthentication() {
                     
-                    return new PasswordAuthentication("NOME UTENTE","PASSWORD".toCharArray());
+                    return new PasswordAuthentication("nome utente","password".toCharArray());
                 }
             });
             
-            URL url = new URL("http://www.google.com/");
+            URL url = new URL("http://www.google.com/maps/api/geocode/xml?");
             URLConnection con = url.openConnection();
             
             BufferedReader in = new BufferedReader(new InputStreamReader(
                     con.getInputStream()));
-            
 
 // Read it ...
             String inputLine;
