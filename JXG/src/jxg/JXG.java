@@ -15,8 +15,7 @@ public class JXG {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-            //fcg
-        //lkljklj
+            int intero=20;
     }
     
 }
