@@ -38,7 +38,7 @@ public class Proxy {
             Authenticator.setDefault(new Authenticator() {
                 protected PasswordAuthentication getPasswordAuthentication() {
                     
-                    return new PasswordAuthentication("70060463","kabobo".toCharArray());
+                    return new PasswordAuthentication("NOME UTENTE","PASSWORD".toCharArray());
                 }
             });
             
@@ -47,6 +47,7 @@ public class Proxy {
             
             BufferedReader in = new BufferedReader(new InputStreamReader(
                     con.getInputStream()));
+            
 
 // Read it ...
             String inputLine;
