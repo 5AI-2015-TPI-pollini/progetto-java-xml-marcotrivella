@@ -38,13 +38,12 @@ public class Proxy {
             Authenticator.setDefault(new Authenticator() {
                 protected PasswordAuthentication getPasswordAuthentication() {
                     
-                    return new PasswordAuthentication("nome utente","password".toCharArray());
+                    return new PasswordAuthentication("70060463","kabobo".toCharArray());
                 }
             });
             
-            URL url = new URL("http://www.google.com/maps/api/geocode/xml?");
+            URL url = new URL("http://www.google.com/maps/api/geocode/xml?address=Milan");
             URLConnection con = url.openConnection();
-            
             BufferedReader in = new BufferedReader(new InputStreamReader(
                     con.getInputStream()));
 
