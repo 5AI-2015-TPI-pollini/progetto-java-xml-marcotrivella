@@ -62,23 +62,9 @@ public class Proxy {
     
     }
 
-    private static class ProxyAuthenticator extends Authenticator {
-
-        public ProxyAuthenticator(String userName, String password) {
-        this.userName = userName;
-        this.password = password;
-    }
-
-
-
-    private String userName, password;
-
-    protected PasswordAuthentication getPasswordAuthentication() {
-        return new PasswordAuthentication(userName, password.toCharArray());
-    }
+    
 
     
 
     }
     
-}
