@@ -18,7 +18,7 @@ import java.net.MalformedURLException;
 import java.net.PasswordAuthentication;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.Base64;
+//import java.util.Base64;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 

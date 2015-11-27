@@ -43,7 +43,7 @@ public class ProxyAuthentication {
         this.password = password;
     }
 
-    public ProxyAuthentication(String nome, String password) {
+    public ProxyAuthentication(final String nome, final String password) {
         this.nome = nome;
         this.password = password;
         System.setProperty("proxySet", "true");

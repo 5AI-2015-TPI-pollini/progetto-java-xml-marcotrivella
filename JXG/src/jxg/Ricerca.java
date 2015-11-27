@@ -95,6 +95,8 @@ public class Ricerca extends javax.swing.JFrame {
         } catch (IOException ex) {
             Logger.getLogger(Ricerca.class.getName()).log(Level.SEVERE, null, ex);
         }
+        this.setVisible(false);
+        new Risultati().setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
