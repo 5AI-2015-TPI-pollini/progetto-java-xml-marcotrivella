@@ -13,11 +13,18 @@ public class Luogo {
     private String nome;
     private String regione;
     private String paese;
+    private String latitudine;
+    private String longitudine;
 
-    public Luogo(String nome, String regione, String paese) {
+    public Luogo(String nome, String regione, String paese, String latitudine, String longitudine) {
         this.nome = nome;
         this.regione = regione;
         this.paese = paese;
+        this.latitudine = latitudine;
+        this.longitudine = longitudine;
+    }
+
+    public Luogo() {
     }
 
     public String getNome() {
@@ -43,6 +50,24 @@ public class Luogo {
     public void setPaese(String paese) {
         this.paese = paese;
     }
+
+    public String getLatitudine() {
+        return latitudine;
+    }
+
+    public void setLatitudine(String latitudine) {
+        this.latitudine = latitudine;
+    }
+
+    public String getLongitudine() {
+        return longitudine;
+    }
+
+    public void setLongitudine(String longitudine) {
+        this.longitudine = longitudine;
+    }
+
+    
     
     
     
