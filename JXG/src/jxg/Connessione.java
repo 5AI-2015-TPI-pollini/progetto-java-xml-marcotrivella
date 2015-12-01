@@ -5,22 +5,25 @@
  */
 package jxg;
 
-import java.io.BufferedReader;
-import java.io.DataInputStream;
-import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
-import java.net.Authenticator;
-import java.net.HttpURLConnection;
+import static java.lang.System.in;
 import java.net.MalformedURLException;
-import java.net.PasswordAuthentication;
 import java.net.URL;
 import java.net.URLConnection;
-//import java.util.Base64;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.w3c.dom.Document;
+import org.xml.sax.SAXException;
+import java.net.InetSocketAddress;
+import java.net.Proxy;
+import java.net.URL;
+import java.net.URLConnection;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import org.w3c.dom.Document;
+
+
+
+
 
 /**
  *
@@ -28,18 +31,19 @@ import java.util.logging.Logger;
  */
 public class Connessione {
     private String luogo;
-    public Connessione(String s) throws MalformedURLException, IOException
+    private Document doc;
+    private DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
+    public Connessione(String s) throws MalformedURLException, IOException, SAXException, ParserConfigurationException
     {
             luogo=s;
             URL url = new URL("http://www.google.com/maps/api/geocode/xml?address=" + luogo);
             URLConnection con = url.openConnection();
-            BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
-            PrintWriter out = new PrintWriter(new FileWriter("Localita.xml"));
-            String output;
-            while ((output = in.readLine()) != null)
-                out.println(output);
-            in.close();
-            out.close();
+            doc = docBuilderFactory.newDocumentBuilder().parse(con.getInputStream());       
+    }
+    
+    public Document prendiDoc()
+    {
+        return doc;
     }
     
 }

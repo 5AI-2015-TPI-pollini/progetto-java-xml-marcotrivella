@@ -4,283 +4,136 @@
  <result>
   <type>locality</type>
   <type>political</type>
-  <formatted_address>Milan, Italy</formatted_address>
+  <formatted_address>London, UK</formatted_address>
   <address_component>
-   <long_name>Milan</long_name>
-   <short_name>Milan</short_name>
+   <long_name>London</long_name>
+   <short_name>London</short_name>
    <type>locality</type>
    <type>political</type>
   </address_component>
   <address_component>
-   <long_name>Milan</long_name>
-   <short_name>Milan</short_name>
-   <type>administrative_area_level_3</type>
-   <type>political</type>
-  </address_component>
-  <address_component>
-   <long_name>Metropolitan City of Milan</long_name>
-   <short_name>MI</short_name>
+   <long_name>Greater London</long_name>
+   <short_name>Gt Lon</short_name>
    <type>administrative_area_level_2</type>
    <type>political</type>
   </address_component>
   <address_component>
-   <long_name>Lombardy</long_name>
-   <short_name>Lombardy</short_name>
+   <long_name>England</long_name>
+   <short_name>England</short_name>
    <type>administrative_area_level_1</type>
    <type>political</type>
   </address_component>
   <address_component>
-   <long_name>Italy</long_name>
-   <short_name>IT</short_name>
+   <long_name>United Kingdom</long_name>
+   <short_name>GB</short_name>
    <type>country</type>
    <type>political</type>
   </address_component>
   <geometry>
    <location>
-    <lat>45.4654219</lat>
-    <lng>9.1859243</lng>
+    <lat>51.5073509</lat>
+    <lng>-0.1277583</lng>
    </location>
    <location_type>APPROXIMATE</location_type>
    <viewport>
     <southwest>
-     <lat>45.3897787</lat>
-     <lng>9.0651182</lng>
+     <lat>51.3849401</lat>
+     <lng>-0.3514683</lng>
     </southwest>
     <northeast>
-     <lat>45.5356890</lat>
-     <lng>9.2903463</lng>
+     <lat>51.6723432</lat>
+     <lng>0.1482710</lng>
     </northeast>
    </viewport>
    <bounds>
     <southwest>
-     <lat>45.3897787</lat>
-     <lng>9.0651182</lng>
+     <lat>51.3849401</lat>
+     <lng>-0.3514683</lng>
     </southwest>
     <northeast>
-     <lat>45.5356890</lat>
-     <lng>9.2903463</lng>
+     <lat>51.6723432</lat>
+     <lng>0.1482710</lng>
     </northeast>
    </bounds>
   </geometry>
-  <place_id>ChIJ53USP0nBhkcRjQ50xhPN_zw</place_id>
+  <place_id>ChIJdd4hrwug2EcRmSrV3Vo6llI</place_id>
  </result>
  <result>
   <type>locality</type>
   <type>political</type>
-  <formatted_address>24030 Milan, Italy</formatted_address>
+  <formatted_address>London, ON, Canada</formatted_address>
   <address_component>
-   <long_name>Milan</long_name>
-   <short_name>Milan</short_name>
+   <long_name>London</long_name>
+   <short_name>London</short_name>
    <type>locality</type>
    <type>political</type>
   </address_component>
   <address_component>
-   <long_name>Berbenno</long_name>
-   <short_name>Berbenno</short_name>
-   <type>administrative_area_level_3</type>
-   <type>political</type>
-  </address_component>
-  <address_component>
-   <long_name>Province of Bergamo</long_name>
-   <short_name>BG</short_name>
+   <long_name>Middlesex County</long_name>
+   <short_name>Middlesex County</short_name>
    <type>administrative_area_level_2</type>
    <type>political</type>
   </address_component>
   <address_component>
-   <long_name>Lombardy</long_name>
-   <short_name>Lombardy</short_name>
+   <long_name>Ontario</long_name>
+   <short_name>ON</short_name>
    <type>administrative_area_level_1</type>
    <type>political</type>
   </address_component>
   <address_component>
-   <long_name>Italy</long_name>
-   <short_name>IT</short_name>
+   <long_name>Canada</long_name>
+   <short_name>CA</short_name>
    <type>country</type>
    <type>political</type>
   </address_component>
-  <address_component>
-   <long_name>24030</long_name>
-   <short_name>24030</short_name>
-   <type>postal_code</type>
-  </address_component>
   <geometry>
    <location>
-    <lat>45.8082694</lat>
-    <lng>9.5760489</lng>
+    <lat>42.9869502</lat>
+    <lng>-81.2431770</lng>
    </location>
    <location_type>APPROXIMATE</location_type>
    <viewport>
     <southwest>
-     <lat>45.8069805</lat>
-     <lng>9.5741419</lng>
+     <lat>42.8245170</lat>
+     <lng>-81.3908520</lng>
     </southwest>
     <northeast>
-     <lat>45.8096785</lat>
-     <lng>9.5788256</lng>
+     <lat>43.0732450</lat>
+     <lng>-81.1063879</lng>
     </northeast>
    </viewport>
    <bounds>
     <southwest>
-     <lat>45.8069895</lat>
-     <lng>9.5741419</lng>
+     <lat>42.8245170</lat>
+     <lng>-81.3908520</lng>
     </southwest>
     <northeast>
-     <lat>45.8096695</lat>
-     <lng>9.5788256</lng>
+     <lat>43.0732450</lat>
+     <lng>-81.1063879</lng>
     </northeast>
    </bounds>
   </geometry>
-  <place_id>ChIJCaK_NAAAhEcRrLiZ-eSNILc</place_id>
+  <place_id>ChIJC5uNqA7yLogRlWsFmmnXxyg</place_id>
  </result>
  <result>
   <type>locality</type>
   <type>political</type>
-  <formatted_address>Milan, TN 38358, USA</formatted_address>
+  <formatted_address>London, KY, USA</formatted_address>
   <address_component>
-   <long_name>Milan</long_name>
-   <short_name>Milan</short_name>
+   <long_name>London</long_name>
+   <short_name>London</short_name>
    <type>locality</type>
    <type>political</type>
   </address_component>
   <address_component>
-   <long_name>Gibson County</long_name>
-   <short_name>Gibson County</short_name>
+   <long_name>Laurel County</long_name>
+   <short_name>Laurel County</short_name>
    <type>administrative_area_level_2</type>
    <type>political</type>
   </address_component>
   <address_component>
-   <long_name>Tennessee</long_name>
-   <short_name>TN</short_name>
-   <type>administrative_area_level_1</type>
-   <type>political</type>
-  </address_component>
-  <address_component>
-   <long_name>United States</long_name>
-   <short_name>US</short_name>
-   <type>country</type>
-   <type>political</type>
-  </address_component>
-  <address_component>
-   <long_name>38358</long_name>
-   <short_name>38358</short_name>
-   <type>postal_code</type>
-  </address_component>
-  <geometry>
-   <location>
-    <lat>35.9197885</lat>
-    <lng>-88.7589488</lng>
-   </location>
-   <location_type>APPROXIMATE</location_type>
-   <viewport>
-    <southwest>
-     <lat>35.8708371</lat>
-     <lng>-88.7847609</lng>
-    </southwest>
-    <northeast>
-     <lat>35.9458680</lat>
-     <lng>-88.7239190</lng>
-    </northeast>
-   </viewport>
-   <bounds>
-    <southwest>
-     <lat>35.8708371</lat>
-     <lng>-88.7847609</lng>
-    </southwest>
-    <northeast>
-     <lat>35.9458680</lat>
-     <lng>-88.7239190</lng>
-    </northeast>
-   </bounds>
-  </geometry>
-  <place_id>ChIJgeFV1FhTeYgRNI-KyrG02-w</place_id>
- </result>
- <result>
-  <type>locality</type>
-  <type>political</type>
-  <formatted_address>Milan, MI 48160, USA</formatted_address>
-  <address_component>
-   <long_name>Milan</long_name>
-   <short_name>Milan</short_name>
-   <type>locality</type>
-   <type>political</type>
-  </address_component>
-  <address_component>
-   <long_name>Washtenaw County</long_name>
-   <short_name>Washtenaw County</short_name>
-   <type>administrative_area_level_2</type>
-   <type>political</type>
-  </address_component>
-  <address_component>
-   <long_name>Michigan</long_name>
-   <short_name>MI</short_name>
-   <type>administrative_area_level_1</type>
-   <type>political</type>
-  </address_component>
-  <address_component>
-   <long_name>United States</long_name>
-   <short_name>US</short_name>
-   <type>country</type>
-   <type>political</type>
-  </address_component>
-  <address_component>
-   <long_name>48160</long_name>
-   <short_name>48160</short_name>
-   <type>postal_code</type>
-  </address_component>
-  <geometry>
-   <location>
-    <lat>42.0853204</lat>
-    <lng>-83.6824384</lng>
-   </location>
-   <location_type>APPROXIMATE</location_type>
-   <viewport>
-    <southwest>
-     <lat>42.0666660</lat>
-     <lng>-83.7103609</lng>
-    </southwest>
-    <northeast>
-     <lat>42.1050890</lat>
-     <lng>-83.6614009</lng>
-    </northeast>
-   </viewport>
-   <bounds>
-    <southwest>
-     <lat>42.0666660</lat>
-     <lng>-83.7103609</lng>
-    </southwest>
-    <northeast>
-     <lat>42.1050890</lat>
-     <lng>-83.6614009</lng>
-    </northeast>
-   </bounds>
-  </geometry>
-  <place_id>ChIJwWXHprChPIgR5asOtp3UtsA</place_id>
- </result>
- <result>
-  <type>locality</type>
-  <type>political</type>
-  <formatted_address>Milan, IL, USA</formatted_address>
-  <address_component>
-   <long_name>Milan</long_name>
-   <short_name>Milan</short_name>
-   <type>locality</type>
-   <type>political</type>
-  </address_component>
-  <address_component>
-   <long_name>Blackhawk Township</long_name>
-   <short_name>Blackhawk Township</short_name>
-   <type>administrative_area_level_3</type>
-   <type>political</type>
-  </address_component>
-  <address_component>
-   <long_name>Rock Island County</long_name>
-   <short_name>Rock Island County</short_name>
-   <type>administrative_area_level_2</type>
-   <type>political</type>
-  </address_component>
-  <address_component>
-   <long_name>Illinois</long_name>
-   <short_name>IL</short_name>
+   <long_name>Kentucky</long_name>
+   <short_name>KY</short_name>
    <type>administrative_area_level_1</type>
    <type>political</type>
   </address_component>
@@ -292,31 +145,93 @@
   </address_component>
   <geometry>
    <location>
-    <lat>41.4530890</lat>
-    <lng>-90.5720803</lng>
+    <lat>37.1289771</lat>
+    <lng>-84.0832646</lng>
    </location>
    <location_type>APPROXIMATE</location_type>
    <viewport>
     <southwest>
-     <lat>41.4098080</lat>
-     <lng>-90.6063370</lng>
+     <lat>37.0797589</lat>
+     <lng>-84.1262620</lng>
     </southwest>
     <northeast>
-     <lat>41.4640331</lat>
-     <lng>-90.5235341</lng>
+     <lat>37.1522599</lat>
+     <lng>-84.0359571</lng>
     </northeast>
    </viewport>
    <bounds>
     <southwest>
-     <lat>41.4098080</lat>
-     <lng>-90.6063370</lng>
+     <lat>37.0797589</lat>
+     <lng>-84.1262620</lng>
     </southwest>
     <northeast>
-     <lat>41.4640331</lat>
-     <lng>-90.5235341</lng>
+     <lat>37.1522599</lat>
+     <lng>-84.0359571</lng>
     </northeast>
    </bounds>
   </geometry>
-  <place_id>ChIJsaC09yYt4ocR-BiISUHSx94</place_id>
+  <place_id>ChIJA8c2lxTNXIgRmMwHc-RRGWI</place_id>
+ </result>
+ <result>
+  <type>locality</type>
+  <type>political</type>
+  <formatted_address>London, OH 43140, USA</formatted_address>
+  <address_component>
+   <long_name>London</long_name>
+   <short_name>London</short_name>
+   <type>locality</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>Madison County</long_name>
+   <short_name>Madison County</short_name>
+   <type>administrative_area_level_2</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>Ohio</long_name>
+   <short_name>OH</short_name>
+   <type>administrative_area_level_1</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>United States</long_name>
+   <short_name>US</short_name>
+   <type>country</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>43140</long_name>
+   <short_name>43140</short_name>
+   <type>postal_code</type>
+  </address_component>
+  <geometry>
+   <location>
+    <lat>39.8864493</lat>
+    <lng>-83.4482529</lng>
+   </location>
+   <location_type>APPROXIMATE</location_type>
+   <viewport>
+    <southwest>
+     <lat>39.8592800</lat>
+     <lng>-83.4789230</lng>
+    </southwest>
+    <northeast>
+     <lat>39.9217860</lat>
+     <lng>-83.3899969</lng>
+    </northeast>
+   </viewport>
+   <bounds>
+    <southwest>
+     <lat>39.8592800</lat>
+     <lng>-83.4789230</lng>
+    </southwest>
+    <northeast>
+     <lat>39.9217860</lat>
+     <lng>-83.3899969</lng>
+    </northeast>
+   </bounds>
+  </geometry>
+  <place_id>ChIJPxME6JelOIgROH-JN5Bcr9Y</place_id>
  </result>
 </GeocodeResponse>

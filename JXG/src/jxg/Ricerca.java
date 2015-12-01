@@ -6,8 +6,16 @@
 package jxg;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.xml.parsers.ParserConfigurationException;
+import jxg.meteo.Luogo;
+import jxg.meteo.LuogoHandler;
+import org.w3c.dom.Document;
+import org.xml.sax.SAXException;
 
 /**
  *
@@ -34,6 +42,7 @@ public class Ricerca extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         ricerca = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+        pannello_bottoni = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -52,34 +61,41 @@ public class Ricerca extends javax.swing.JFrame {
             }
         });
 
+        javax.swing.GroupLayout pannello_bottoniLayout = new javax.swing.GroupLayout(pannello_bottoni);
+        pannello_bottoni.setLayout(pannello_bottoniLayout);
+        pannello_bottoniLayout.setHorizontalGroup(
+            pannello_bottoniLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        pannello_bottoniLayout.setVerticalGroup(
+            pannello_bottoniLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 348, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(153, 153, 153)
-                        .addComponent(jButton1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(78, 78, 78)
-                        .addComponent(ricerca, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(93, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addGap(19, 19, 19)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(128, 128, 128))
+                .addGap(18, 18, 18)
+                .addComponent(ricerca, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(41, 41, 41)
+                .addComponent(jButton1)
+                .addContainerGap(344, Short.MAX_VALUE))
+            .addComponent(pannello_bottoni, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(101, 101, 101)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(22, 22, 22)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ricerca, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ricerca, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(46, 46, 46))
+                .addComponent(pannello_bottoni, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -92,11 +108,23 @@ public class Ricerca extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         try {
             Connessione connessione = new Connessione (ricerca.getText());
+            Document doc = connessione.prendiDoc();
+            LuogoHandler crea_luoghi = new LuogoHandler();
+            Luogo [] luoghi = crea_luoghi.Estrai(doc);
+            for(int i=0; i < luoghi.length; i++)
+            {
+                JButton button = new JButton("Nome: "+luoghi[i].getNome()+"  Latitudine: "+luoghi[i].getLatitudine()+"   Longitudine: "+luoghi[i].getLongitudine());
+                pannello_bottoni.setVisible(true);
+                pannello_bottoni.add(button);
+            }
+        } catch (SAXException ex) {
+            Logger.getLogger(Ricerca.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ParserConfigurationException ex) {
+            Logger.getLogger(Ricerca.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
             Logger.getLogger(Ricerca.class.getName()).log(Level.SEVERE, null, ex);
         }
-        this.setVisible(false);
-        new Risultati().setVisible(true);
+       
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -137,6 +165,7 @@ public class Ricerca extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel pannello_bottoni;
     private javax.swing.JTextField ricerca;
     // End of variables declaration//GEN-END:variables
 }
