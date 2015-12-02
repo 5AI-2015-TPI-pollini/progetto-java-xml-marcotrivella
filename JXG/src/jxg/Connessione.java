@@ -38,6 +38,7 @@ public class Connessione {
             luogo=s;
             URL url = new URL("http://www.google.com/maps/api/geocode/xml?address=" + luogo);
             URLConnection con = url.openConnection();
+            //Fa il parse del documento preso dal sito
             doc = docBuilderFactory.newDocumentBuilder().parse(con.getInputStream());       
     }
     

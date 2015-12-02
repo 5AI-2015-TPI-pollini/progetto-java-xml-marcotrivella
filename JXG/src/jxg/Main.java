@@ -43,6 +43,8 @@ public class Main extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocation(new java.awt.Point(600, 200));
+        setResizable(false);
 
         jLabel1.setText("Password");
 
@@ -58,6 +60,12 @@ public class Main extends javax.swing.JFrame {
         proxy.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 proxyActionPerformed(evt);
+            }
+        });
+
+        pssw.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                psswActionPerformed(evt);
             }
         });
 
@@ -128,6 +136,10 @@ public class Main extends javax.swing.JFrame {
         this.setVisible(false);
         new Ricerca().setVisible(true);    
     }//GEN-LAST:event_noproxyActionPerformed
+
+    private void psswActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_psswActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_psswActionPerformed
 
     /**
      * @param args the command line arguments
