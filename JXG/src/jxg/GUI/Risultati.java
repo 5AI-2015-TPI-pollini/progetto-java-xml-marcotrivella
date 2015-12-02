@@ -28,6 +28,7 @@ public class Risultati extends javax.swing.JFrame {
 
     /**
      * Crea Risultati
+     * @param doc
      */
     public Risultati(Document doc) {
         initComponents();
