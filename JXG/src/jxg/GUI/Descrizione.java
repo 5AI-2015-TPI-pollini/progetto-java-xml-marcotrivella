@@ -3,12 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jxg;
+package jxg.GUI;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
 import javax.swing.JFrame;
 import javax.xml.parsers.ParserConfigurationException;
+import jxg.internet.ConnessioneMeteo;
 import jxg.meteo.Luogo;
 import jxg.meteo.Meteo;
 import jxg.meteo.MeteoHandler;
@@ -58,7 +59,6 @@ public class Descrizione extends javax.swing.JFrame {
         maxtemp = new javax.swing.JLabel();
         cloud = new javax.swing.JLabel();
 
-        setMaximumSize(new java.awt.Dimension(500, 500));
         setMinimumSize(new java.awt.Dimension(500, 500));
         setResizable(false);
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.Y_AXIS));

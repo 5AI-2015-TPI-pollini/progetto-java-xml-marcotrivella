@@ -3,8 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jxg;
+package jxg.GUI;
 
+import jxg.GUI.Ricerca;
+import jxg.GUI.Descrizione;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;

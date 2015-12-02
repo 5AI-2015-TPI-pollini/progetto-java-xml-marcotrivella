@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jxg;
+package jxg.GUI;
 
 import java.awt.Component;
 import java.io.IOException;
@@ -13,7 +13,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.xml.parsers.ParserConfigurationException;
+import jxg.internet.ConnessioneGMaps;
 import jxg.meteo.Luogo;
 import jxg.meteo.LuogoHandler;
 import org.w3c.dom.Document;
@@ -104,11 +106,25 @@ public class Ricerca extends javax.swing.JFrame {
             this.setVisible(false);
             new Risultati(doc).setVisible(true);
         } catch (SAXException ex) {
-            Logger.getLogger(Ricerca.class.getName()).log(Level.SEVERE, null, ex);
+            JFrame errore = new JFrame();
+            JLabel label = new JLabel("Non riesco a fare il SAX");
+            errore.add(label);
+            errore.setLocation(null);
         } catch (ParserConfigurationException ex) {
-            Logger.getLogger(Ricerca.class.getName()).log(Level.SEVERE, null, ex);
+            JFrame errore = new JFrame();
+            JLabel label = new JLabel("Non riesco a fare il parser");
+            errore.add(label);
+            errore.setLocation(null);
         } catch (IOException ex) {
-            Logger.getLogger(Ricerca.class.getName()).log(Level.SEVERE, null, ex);
+            JFrame errore = new JFrame();
+            JLabel label = new JLabel("Errore di input");
+            errore.add(label);
+            errore.setLocation(null);
+        } catch (NullPointerException ex){
+            JFrame errore = new JFrame();
+            JLabel label = new JLabel("Puntatore vuoto");
+            errore.add(label);
+            errore.setLocation(null);
         }
        
     }//GEN-LAST:event_jButton1ActionPerformed

@@ -3,13 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jxg;
+package jxg.GUI;
 
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.xml.parsers.ParserConfigurationException;
+import jxg.internet.ProxyAuthentication;
 import org.xml.sax.SAXException;
 
 /**
@@ -45,7 +47,6 @@ public class Main extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setLocation(new java.awt.Point(600, 200));
         setResizable(false);
 
         jLabel1.setText("Password");
@@ -129,7 +130,14 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_nutenteActionPerformed
 
     private void proxyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_proxyActionPerformed
+        try{
         ProxyAuthentication utente = new ProxyAuthentication(nutente.getText(),new String(pssw.getPassword()));
+        } catch (Exception ex){
+            JFrame errore = new JFrame();
+            JLabel label = new JLabel("ERRORE");
+            errore.add(label);
+            errore.setLocation(null);
+        }
         this.setVisible(false);
         new Ricerca().setVisible(true);    
     }//GEN-LAST:event_proxyActionPerformed
