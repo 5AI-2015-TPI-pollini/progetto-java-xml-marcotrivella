@@ -28,25 +28,38 @@ import org.w3c.dom.Document;
 
 /**
  *
- * @author 70060463
+ * @author Marco Trivella
  */
+
+
 public class ConnessioneGMaps {
     private String s;
     private Document doc;
     private DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
+    /**
+     * 
+     * @param s string contenente il nome del luogo da cercare
+     * @throws MalformedURLException URL non trovato
+     * @throws IOException Errore input
+     * @throws SAXException Errore SAX
+     * @throws ParserConfigurationException Errore parser 
+     */
     public ConnessioneGMaps(String s) throws MalformedURLException, IOException, SAXException, ParserConfigurationException
     {
                     this.s=s;
                     String luogo;
-                    //Toglie gli spazi
                     luogo = s.replace(" ","");
                     System.out.println(luogo);
                     URL url = new URL("http://www.google.com/maps/api/geocode/xml?address=" + luogo);
                     URLConnection con = url.openConnection();
-                    //Fa il parse del documento preso dal sito
+                    /**
+                     * Il metodo parse analizza il documento XML e genera in memoria la struttura DOM
+                     */
                     doc = docBuilderFactory.newDocumentBuilder().parse(con.getInputStream());       
                 }
-    
+     /**
+     * @return doc metodo che ritorna il documento su cui è stato eseguito il parse
+     */
     public Document prendiDoc()
     {
         return doc;

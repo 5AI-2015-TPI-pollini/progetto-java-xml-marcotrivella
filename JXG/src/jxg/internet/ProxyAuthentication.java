@@ -17,32 +17,50 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
- * @author 70060463
+ * @author Marco Trivella
  */
+
 public class ProxyAuthentication {
     private String nome;
     private String password;
-
+    /**
+    * Costruttore vuoto
+    */
     ProxyAuthentication() {
     }
-
+    /**
+     * 
+     * @return nome nome utente
+     */
     public String getNome() {
         return nome;
     }
-
+    /**
+     * 
+     * @param nome nome utente
+     */
     public void setNome(String nome) {
         this.nome = nome;
     }
-
+    /**
+     * 
+     * @return password password dell'utente
+     */
     public String getPassword() {
         return password;
     }
-
+    /**
+     * 
+     * @param password password dell'utente
+     */
     public void setPassword(String password) {
         this.password = password;
     }
-
+    /**
+     * 
+     * @param nome nome utente
+     * @param password password inserita dall'utente
+     */
     public ProxyAuthentication(final String nome, final String password) {
         this.nome = nome;
         this.password = password;
@@ -56,6 +74,7 @@ public class ProxyAuthentication {
             }
         });
     }
+
     private static class ProxyAuthenticator extends Authenticator {
 
         public ProxyAuthenticator(String userName, String password) {
@@ -66,7 +85,10 @@ public class ProxyAuthentication {
 
 
     private String userName, password;
-
+    /**
+     * 
+     * @return new PasswordAuthentication ritorna oggetto PasswordAuthentication a cui viene passato username e password
+     */
     protected PasswordAuthentication getPasswordAuthentication() {
         return new PasswordAuthentication(userName, password.toCharArray());
     }

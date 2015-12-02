@@ -14,22 +14,29 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 /**
  *
- * @author Marco
- */
+ * @author Marco Trivella
+*/
 public class LuogoHandler {
     private static final XPathFactory xpathFactory = XPathFactory.newInstance();
     private Luogo[] luoghi;
     private String address = "/GeocodeResponse/result/formatted_address/text()";
     private String latitudine = "/GeocodeResponse/result/geometry/location/lat/text()";
     private String longitudine = "/GeocodeResponse/result/geometry/location/lng/text()";
-
+/**
+ * Costruttore vuoto
+ */
     public LuogoHandler()
     {
     }
+    /**
+     * 
+     * @param xml documento contentente l'xml ottuno dal sito di Geocoding
+     * @return luoghi vettore di Luogo contenente tutti i risultati ottenuti dall'utilizzo dell'XPath sul documento xml 
+     */
     public Luogo[] Estrai(Document xml) {
         try {
             XPath xpath = xpathFactory.newXPath();
-            // Complial le XPATH expression per valutarle piu tardi
+            // Complila le XPATH expression per valutarle piu tardi
             XPathExpression indirizzo = xpath.compile(address);
             XPathExpression lat = xpath.compile(latitudine);
             XPathExpression lon = xpath.compile(longitudine);
@@ -46,7 +53,10 @@ public class LuogoHandler {
     }
         return luoghi;
     }
-    
+    /**
+     * 
+     * @return luoghi.length la lunghezza del vettore luoghi
+     */
     public int getNLuoghi()
     {
         return luoghi.length;

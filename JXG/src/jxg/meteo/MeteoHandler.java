@@ -14,7 +14,7 @@ import org.w3c.dom.Document;
 
 /**
  *
- * @author Marco
+ * @author Marco Trivella
  */
 public class MeteoHandler {
     
@@ -25,21 +25,27 @@ public class MeteoHandler {
     private static final String maxtemp = "/current/temperature/@max";
     private static final String cloud = "/current/clouds/@name";
     
-    
+    /**
+     * Costruttore vuoto
+     */
     public MeteoHandler() 
     {
         
     }
-    
+    /**
+     * 
+     * @param xml documento contenente l'xml ottenuto dal sito di providing del meteo
+     * @return forecast oggetto di tipo Meteo
+     */
     public Meteo Estrai(Document xml) {
         try {
             XPath xpath = xpathFactory.newXPath();
-            // Prepare the queries
+            // Complila le XPATH expression per valutarle piu tardi
             XPathExpression temperaturax = xpath.compile(temperatura);
             XPathExpression mintempx = xpath.compile(mintemp);
             XPathExpression maxtempx = xpath.compile(maxtemp);
             XPathExpression cloudx = xpath.compile(cloud);
-            // Execute the xpath query
+            // Valuta l'espressioni XPATH nel contesto specifico e ritorna il risultato del tipo designato (In questo caso NUMBER E STRING)
             double tempora = (Double) temperaturax.evaluate(xml, XPathConstants.NUMBER);
             double mintempora = (Double) mintempx.evaluate(xml, XPathConstants.NUMBER);
             double maxtempora = (Double) maxtempx.evaluate(xml, XPathConstants.NUMBER);
