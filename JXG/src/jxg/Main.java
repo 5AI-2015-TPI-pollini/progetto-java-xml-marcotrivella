@@ -8,6 +8,7 @@ package jxg;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JFrame;
 import javax.xml.parsers.ParserConfigurationException;
 import org.xml.sax.SAXException;
 
@@ -22,6 +23,7 @@ public class Main extends javax.swing.JFrame {
      */
     public Main() {
         initComponents();
+        frame.setLocationRelativeTo(null);
         
     }
 
@@ -176,7 +178,7 @@ public class Main extends javax.swing.JFrame {
         });
     }
     
-
+JFrame frame = this;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
