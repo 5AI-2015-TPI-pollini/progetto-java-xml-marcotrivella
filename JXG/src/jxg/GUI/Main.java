@@ -140,7 +140,12 @@ public class Main extends javax.swing.JFrame {
     private void psswActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_psswActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_psswActionPerformed
-public static void main(String args[]) {
+
+    /**
+     *
+     * @param args
+     */
+    public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
