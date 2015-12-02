@@ -28,6 +28,9 @@ public class Meteo {
         this.cloud = cloud;
     }
 
+    /**
+     *
+     */
     public Meteo() {
     }
     /**
