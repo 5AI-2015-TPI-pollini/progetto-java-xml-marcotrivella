@@ -3,3 +3,6 @@ Progetto in java per ricavare da un documento xml fornito da Google Geocoding e 
 
 # Download del progetto
 http://marcotrivella.github.io/JXG
+
+# Descrizione del progetto
+https://github.com/5AI-2015-TPI-pollini/progetto-java-xml-marcotrivella/wiki/Documentazione
