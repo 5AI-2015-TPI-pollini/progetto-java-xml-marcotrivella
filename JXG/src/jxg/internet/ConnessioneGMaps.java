@@ -48,7 +48,7 @@ public class ConnessioneGMaps {
     {
                     this.s=s;
                     String luogo;
-                    luogo = s.replace(" ","");
+                    luogo = s.replace(" ","%20");
                     System.out.println(luogo);
                     URL url = new URL("http://www.google.com/maps/api/geocode/xml?address=" + luogo);
                     URLConnection con = url.openConnection();
