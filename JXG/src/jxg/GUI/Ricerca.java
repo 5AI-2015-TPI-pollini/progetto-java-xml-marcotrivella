@@ -104,21 +104,25 @@ public class Ricerca extends javax.swing.JFrame {
             JLabel label = new JLabel("Non riesco a fare il SAX");
             errore.add(label);
             errore.setLocation(null);
+            errore.setVisible(true);
         } catch (ParserConfigurationException ex) {
             JFrame errore = new JFrame();
             JLabel label = new JLabel("Non riesco a fare il parser");
             errore.add(label);
             errore.setLocation(null);
+            errore.setVisible(true);
         } catch (IOException ex) {
             JFrame errore = new JFrame();
             JLabel label = new JLabel("Errore di input");
             errore.add(label);
             errore.setLocation(null);
+            errore.setVisible(true);
         } catch (NullPointerException ex){
             JFrame errore = new JFrame();
             JLabel label = new JLabel("Puntatore vuoto");
             errore.add(label);
             errore.setLocation(null);
+            errore.setVisible(true);
         }
        
     }//GEN-LAST:event_jButton1ActionPerformed

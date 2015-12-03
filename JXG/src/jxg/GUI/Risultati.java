@@ -14,6 +14,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.xml.parsers.ParserConfigurationException;
 import jxg.meteo.Luogo;
 import jxg.meteo.LuogoHandler;
@@ -53,11 +54,23 @@ public class Risultati extends javax.swing.JFrame {
                         * @throws IOException ex in caso di errore di input
                         */
                         } catch (IOException ex) {
-                            Logger.getLogger(Risultati.class.getName()).log(Level.SEVERE, null, ex);
+                            JFrame errore = new JFrame();
+                            JLabel label = new JLabel("Errore di input");
+                            errore.add(label);
+                            errore.setLocation(null);
+                            errore.setVisible(true);
                         } catch (SAXException ex) {
-                            Logger.getLogger(Risultati.class.getName()).log(Level.SEVERE, null, ex);
+                            JFrame errore = new JFrame();
+                            JLabel label = new JLabel("Non riesco a fare il SAX");
+                            errore.add(label);
+                            errore.setLocation(null);
+                            errore.setVisible(true);
                         } catch (ParserConfigurationException ex) {
-                            Logger.getLogger(Risultati.class.getName()).log(Level.SEVERE, null, ex);
+                            JFrame errore = new JFrame();
+                            JLabel label = new JLabel("Non riesco a fare il parser");
+                            errore.add(label);
+                            errore.setLocation(null);
+                            errore.setVisible(true);
                         }
                     }
                 });

@@ -127,6 +127,7 @@ public class Main extends javax.swing.JFrame {
             JLabel label = new JLabel("ERRORE");
             errore.add(label);
             errore.setLocation(null);
+            errore.setVisible(true);
         }
         this.setVisible(false);
         new Ricerca().setVisible(true);    
