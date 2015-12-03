@@ -36,7 +36,7 @@ public class ConnessioneMeteo {
     {
             this.latitudine=latitudine;
             this.longitudine=longitudine;
-            URL url = new URL("http://api.openweathermap.org/data/2.5/weather?lat=" + latitudine + "&lon=" + longitudine + "&units=metric&appid=2de143494c0b295cca9337e1e96b00e0&mode=xml");
+            URL url = new URL("http://api.openweathermap.org/data/2.5/weather?lat=" + latitudine + "&lon=" + longitudine + "&units=metric&appid=d4f89be2d2ef9af87c5b45d0eed6a931&mode=xml");
             URLConnection con = url.openConnection();
             /**
             * Il metodo parse analizza il documento XML e genera in memoria la struttura DOM       
