@@ -18,6 +18,7 @@ public class Luogo {
      * @param nome nome del luogo
      * @param latitudine latitudine del luogo
      * @param longitudine longitudine del luogo
+     * Classe utile per effettuare operazioni sui dati del relativo documento xml
      */
     public Luogo(String nome, double latitudine, double longitudine) {
         this.nome = nome;

@@ -20,6 +20,7 @@ public class Meteo {
      * @param tmin double che indica la temperatura minima
      * @param tmax double che indica la temperatura massima
      * @param cloud  stringa che indica le condizioni del cielo
+     * Classe utile per effettuare operazioni sui dati ricavati dal relativo documento xml 
      */
     public Meteo(double temperatura, double tmin, double tmax, String cloud) {
         this.temperatura = temperatura;

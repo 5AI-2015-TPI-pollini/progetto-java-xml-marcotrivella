@@ -32,6 +32,8 @@ public class LuogoHandler {
      * 
      * @param xml documento contentente l'xml ottuno dal sito di Geocoding
      * @return luoghi vettore di Luogo contenente tutti i risultati ottenuti dall'utilizzo dell'XPath sul documento xml 
+     * Questo metodo serve per estrarre le informazioni riguardanti la latitudine, la longitudine e il nome dell'indirizzo
+     * dal documento xml, passato come input, tramite l'uso dell'XPath.
      */
     public Luogo[] Estrai(Document xml) {
         try {
