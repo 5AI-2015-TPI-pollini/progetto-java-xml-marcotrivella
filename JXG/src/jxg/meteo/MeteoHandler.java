@@ -36,6 +36,8 @@ public class MeteoHandler {
      * 
      * @param xml documento contenente l'xml ottenuto dal sito di providing del meteo
      * @return forecast oggetto di tipo Meteo
+     * Questo metodo serve per estrarre le informazioni riguardanti la temperatura massima, minima, attuale
+     * le condizioni del cielo dal documento xml, passato come input, tramite l'uso dell'XPath.
      */
     public Meteo Estrai(Document xml) {
         try {
